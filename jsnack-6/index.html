@@ -8,17 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    <span id="result"></span>
-
     <script>
-        let num = prompt("Inserisci un numero");
-        let num1 = prompt("Inserisci un altro numero");
+        var num = parseInt(prompt("Inserisci un numero"));
 
-        if (parseInt(num) > parseInt(num1)) {
-            document.getElementById("result").innerHTML = num;
-        }
-        else {
-            document.getElementById("result").innerHTML = num1;
+        for (var i = 1; i < num+1; i++) {
+            console.log(i*i);
         }
     </script>
 </body>
