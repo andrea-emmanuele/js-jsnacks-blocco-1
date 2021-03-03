@@ -11,15 +11,15 @@
     <span id="result"></span>
 
     <script>
-        let num = prompt("Inserisci un numero");
-        let num1 = prompt("Inserisci un altro numero");
+        var sum = 0;
+        var average = 0;
 
-        if (parseInt(num) > parseInt(num1)) {
-            document.getElementById("result").innerHTML = num;
+        for (var i = 1; i <= 10; i++) {
+            sum += parseInt(i);
+            average = sum/10;
         }
-        else {
-            document.getElementById("result").innerHTML = num1;
-        }
+
+        console.log("somma: " + sum + " media: " + average);
     </script>
 </body>
 </html>

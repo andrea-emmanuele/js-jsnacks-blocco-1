@@ -8,17 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <span id="result"></span>
-
     <script>
-        let num = prompt("Inserisci un numero");
-        let num1 = prompt("Inserisci un altro numero");
-
-        if (parseInt(num) > parseInt(num1)) {
-            document.getElementById("result").innerHTML = num;
-        }
-        else {
-            document.getElementById("result").innerHTML = num1;
+        for (var i = 0; i < 11; i++) {
+            console.log(Math.pow(2, i));
         }
     </script>
 </body>

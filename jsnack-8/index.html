@@ -8,18 +8,17 @@
     <title>Document</title>
 </head>
 <body>
-    <span id="result"></span>
+  <script>
+        var num = prompt("Inserisci un numero da quattro cifre", "3421");
+        var sum = 0;
 
-    <script>
-        let num = prompt("Inserisci un numero");
-        let num1 = prompt("Inserisci un altro numero");
+        Array.from(num);
 
-        if (parseInt(num) > parseInt(num1)) {
-            document.getElementById("result").innerHTML = num;
+        for (var i = 0; i < num.length; i++) {
+            sum += parseInt(num[i]);
         }
-        else {
-            document.getElementById("result").innerHTML = num1;
-        }
-    </script>
+
+        console.log(sum);
+  </script>
 </body>
 </html>
