@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <span id="result"></span>
+
+    <script>
+        var invitati = ["Andrea", "Pippo", "Concetto"];
+        var tuoNome = prompt("Inserisci il tuo nome");
+        var access = false;
+
+        for (var i = 0; i < invitati.length; i++) {
+            if (invitati[i] === tuoNome) {
+                access = true;
+            }
+        }
+
+        if (access)
+            document.getElementById("result").innerHTML = "Puoi entrare";
+        else
+            document.getElementById("result").innerHTML = "Torna a casa";
+    </script>
+</body>
+</html>

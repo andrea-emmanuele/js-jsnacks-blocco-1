@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <span id="result"></span>
+
+    <script>
+        let num = prompt("Inserisci un numero");
+        let num1 = prompt("Inserisci un altro numero");
+
+        if (parseInt(num) > parseInt(num1)) {
+            document.getElementById("result").innerHTML = num;
+        }
+        else {
+            document.getElementById("result").innerHTML = num1;
+        }
+    </script>
+</body>
+</html>
